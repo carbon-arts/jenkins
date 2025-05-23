@@ -4,11 +4,6 @@ pipeline {
     tools {nodejs "node"}
     
     stages {
-        stage('Cloning Git') {
-            steps {
-                git 'https://github.com/carbon-arts/jenkins.git'
-            }
-        }
         stage('Install Dependencies'){
             steps {
                 sh 'npm install'
