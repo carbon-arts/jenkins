@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'git@github.com:carbon-arts/jenkins.git'
+                git 'https://github.com/carbon-arts/jenkins.git'
             }
         }
         stage('Install Dependencies'){
